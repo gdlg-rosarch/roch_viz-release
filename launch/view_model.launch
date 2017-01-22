@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="base"       value="$(optenv ROCH_BASE roch)"/>  <!-- roch -->
+  <arg name="stacks"     value="$(optenv ROCH_STACKS standard)"/>  <!-- standard -->
+  <arg name="3d_sensor"  value="$(optenv ROCH_3D_SENSOR asus_xtion_pro)"/>  <!-- kinect, asus_xtion_pro -->
+  <arg name="3d_sensor_enable"  value="$(optenv ROCH_3D_SENSOR_ENABLE true)"/>  <!-- 3d sensor enable -->
+  <arg name="2d_laser"  value="$(optenv ROCH_LASER ls01c)"/>  <!-- ls01c -->
+  <arg name="2d_laser_enable"  value="$(optenv ROCH_LASER_ENABLE false)"/>  <!-- 2d laser enable -->
+  
+  <!-- Standalone launcher to visualize the robot model. -->
+  <include file="$(find roch_bringup)/launch/includes/robot.launch.xml">
+    <arg name="base" value="$(arg base)" />
+    <arg name="stacks" value="$(arg stacks)" />
+    <arg name="3d_sensor" value="$(arg 3d_sensor)" />
+    <arg name="3d_sensor_enable" value="$(arg 3d_sensor_enable)"/>
+    <arg name="2d_laser" value="$(arg 2d_laser)" />
+    <arg name="2d_laser_enable" value="$(arg 2d_laser_enable)" />
+  </include>
+  
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    <param name="use_gui" value="true" />
+  </node>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find roch_viz)/rviz/model.rviz" />
+</launch>
