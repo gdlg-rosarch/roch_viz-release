@@ -1,6 +1,10 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Changelog for package roch_viz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1.0.8 (2017-01-24)
+------------------
+* Fixed rviz file of robot that will cause error with not plugin of imu.
+
 1.0.7 (2017-01-22)
 ------------------
 * Add launch file named view_navigation for navigation.
