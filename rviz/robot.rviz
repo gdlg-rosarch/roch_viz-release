@@ -61,150 +61,6 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        base_footprint:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        base_laser:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        base_laser_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cliff_sensor_front_left_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        cliff_sensor_front_right_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        front_left_wheel_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        front_right_wheel_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        front_wheel_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        imu_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        plate_bottom_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        plate_middle_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        plate_sensor_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        pole_bottom_0_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        pole_bottom_1_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        pole_bottom_2_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        pole_bottom_3_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        pole_middle_0_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        pole_middle_1_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        pole_middle_2_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        pole_middle_3_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        pole_top_0_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        pole_top_1_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        pole_top_2_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        psd_sensor_front_left_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        psd_sensor_front_middle_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        psd_sensor_front_right_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rear_wheel_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        ultrasonic_sensor_front_left_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        ultrasonic_sensor_front_middle_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        ultrasonic_sensor_front_right_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
@@ -306,28 +162,6 @@ Visualization Manager:
           Use Fixed Frame: true
           Use rainbow: true
           Value: true
-        - Acceleration properties:
-            Acc. vector alpha: 0.5
-            Acc. vector color: 85; 0; 255
-            Acc. vector scale: 0.05
-            Derotate acceleration: false
-            Enable acceleration: true
-          Axes properties:
-            Axes scale: 1
-            Enable axes: true
-          Box properties:
-            Box alpha: 1
-            Box color: 85; 0; 255
-            Enable box: false
-            x_scale: 0.4
-            y_scale: 0.4
-            z_scale: 0.4
-          Class: rviz_imu_plugin/Imu
-          Enabled: false
-          Name: Imu
-          Topic: /imu/data
-          Unreliable: false
-          Value: false
       Enabled: true
       Name: Sensing
     - Class: rviz/Group
@@ -385,6 +219,9 @@ Visualization Manager:
           Class: rviz/Path
           Color: 25; 255; 0
           Enabled: true
+          Head Diameter: 0.3
+          Head Length: 0.2
+          Length: 0.3
           Line Style: Lines
           Line Width: 0.03
           Name: Global Plan
@@ -392,6 +229,10 @@ Visualization Manager:
             X: 0
             Y: 0
             Z: 0
+          Pose Style: None
+          Radius: 0.03
+          Shaft Diameter: 0.1
+          Shaft Length: 0.1
           Topic: /move_base/NavfnROS/plan
           Unreliable: false
           Value: true
@@ -400,6 +241,9 @@ Visualization Manager:
           Class: rviz/Path
           Color: 255; 0; 0
           Enabled: true
+          Head Diameter: 0.3
+          Head Length: 0.2
+          Length: 0.3
           Line Style: Lines
           Line Width: 0.03
           Name: Local Plan
@@ -407,6 +251,10 @@ Visualization Manager:
             X: 0
             Y: 0
             Z: 0
+          Pose Style: None
+          Radius: 0.03
+          Shaft Diameter: 0.1
+          Shaft Length: 0.1
           Topic: /move_base/DWAPlannerROS/local_plan
           Unreliable: false
           Value: true
