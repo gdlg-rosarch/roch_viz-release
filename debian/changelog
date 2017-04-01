@@ -1,0 +1,38 @@
+ros-indigo-roch-viz (1.0.9-3saucy) saucy; urgency=high
+
+  * Add navigation files.
+
+ -- Carl <wzhang@softrobtech.com>  Wed, 22 Mar 2017 16:00:00 -0000
+
+ros-indigo-roch-viz (1.0.8-3saucy) saucy; urgency=high
+
+  * Fixed rviz file of robot that will cause error with not plugin of imu.
+
+ -- Carl <wzhang@softrobtech.com>  Mon, 23 Jan 2017 16:00:00 -0000
+
+ros-indigo-roch-viz (1.0.7-3saucy) saucy; urgency=high
+
+  * Add launch file named view_navigation for navigation.
+  * Load navigation file of rviz.
+
+ -- Carl <wzhang@softrobtech.com>  Sat, 21 Jan 2017 16:00:00 -0000
+
+ros-indigo-roch-viz (1.0.6-3saucy) saucy; urgency=high
+
+
+
+ -- Carl <wzhang@softrobtech.com>  Mon, 16 Jan 2017 16:00:00 -0000
+
+ros-indigo-roch-viz (0.1.1-3saucy) saucy; urgency=high
+
+
+
+ -- Carl <wzhang@softrobtech.com>  Wed, 23 Nov 2016 16:00:00 -0000
+
+ros-indigo-roch-viz (0.0.1-3saucy) saucy; urgency=high
+
+  * Metapackages for viewer of Roch.
+
+ -- Carl <wzhang@softrobtech.com>  Thu, 15 Sep 2016 16:00:00 -0000
+
+
