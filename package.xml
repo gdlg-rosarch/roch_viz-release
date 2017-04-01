@@ -22,7 +22,7 @@
   <run_depend>joint_state_publisher</run_depend>
   <run_depend>rviz</run_depend>
   <run_depend>rviz_imu_plugin</run_depend>
-  <run_depend>roch_bringup</run_depend>
+<!--  <run_depend>roch_bringup</run_depend> --> <!-- Comment this due to circle dependenices. -->
   <run_depend>robot_state_publisher</run_depend>
 
   <export>
